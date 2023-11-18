@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!--JavaScript-->
+  <script src="Калькулятор.JS" defer></script>
+  <style>
+    * {
+      text-align: center;
+      font-family: verdana;
+      border-radius: 9px;
+    }
+  </style>
+  <title>Calculator</title>
+</head>
+<body class="bg-dark text-light">
+  <div class="container w-50 pt-5">
+    <h1>Calculator</h1>
+      <input type="number" class="form-control mb-2" placeholder="First number" id="input1"/>
+      <div class="d-flex mb-2">
+        <button class="btn btn-success flex-grow-1 mx-2" id="plus" title="plus">+</button><br>
+        <button class="btn btn-danger flex-grow-1 mx-2" id="minus" title="minus">-</button><br>
+        <button class="btn btn-success flex-grow-1 mx-2" id="multiplication" title="multiplication">*</button><br>
+        <button class="btn btn-danger flex-grow-1 mx-2" id="division" title="division">:</button><br>
+        <button class="btn btn-success flex-grow-1 mx-2" id="factorial" title="Factorial">!</button><br>
+      </div>
+      <input type="number" class="form-control mb-2" placeholder="Second number" id="input2"/>
+      <button class="btn btn-outline-info w-100 mb-2" id="submit">Calculate</button>
+
+      <div class="text-bg-light p-3 text-center" style="border-radius: 9px;">
+        <h4>Result:</h4>
+        <p id="result" class="mb-0"></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
